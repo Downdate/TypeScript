@@ -78,3 +78,27 @@ console.log(sum(10, 20)); // Output: 30
 function throwError(message: string): never {
     throw new Error(message);
 }
+
+// generics 
+
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+console.log(identity<string>("Hello")); // Output: Hello
+console.log(identity<number>(42)); // Output: 42
+
+function swap<T>(a: T, b: T): [T, T] {
+    return [b, a];
+}
+
+console.log(swap("Hello", "World")); // Output: ["World", "Hello"]
+console.log(swap(42, 24)); // Output: [24, 42]
+
+function printSomething<T,U,V>(a: T, b: U, c: V): void {
+    console.log(`Printing value 'a': ${a}, Printing value 'b': ${b}, Printing value 'c': ${c}`);
+
+}
+
+printSomething<string, number, boolean>("Hello", 42, true);
+printSomething<number,boolean,boolean>(123, true, false);

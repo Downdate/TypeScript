@@ -55,4 +55,20 @@ console.log(sum(10, 20)); // Output: 30
 function throwError(message) {
     throw new Error(message);
 }
+// generics 
+function identity(arg) {
+    return arg;
+}
+console.log(identity("Hello")); // Output: Hello
+console.log(identity(42)); // Output: 42
+function swap(a, b) {
+    return [b, a];
+}
+console.log(swap("Hello", "World")); // Output: ["World", "Hello"]
+console.log(swap(42, 24)); // Output: [24, 42]
+function printSomething(a, b, c) {
+    console.log(`Printing value 'a': ${a}, Printing value 'b': ${b}, Printing value 'c': ${c}`);
+}
+printSomething("Hello", 42, true);
+printSomething(123, true, false);
 //# sourceMappingURL=index.js.map
