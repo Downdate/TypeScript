@@ -51,4 +51,8 @@ function sum(...numbers) {
 }
 console.log(sum(1, 2, 3, 4, 5)); // Output: 15
 console.log(sum(10, 20)); // Output: 30
+// infinite functions using 'never' type
+function throwError(message) {
+    throw new Error(message);
+}
 //# sourceMappingURL=index.js.map
