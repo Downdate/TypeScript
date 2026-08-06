@@ -71,4 +71,30 @@ function printSomething(a, b, c) {
 }
 printSomething("Hello", 42, true);
 printSomething(123, true, false);
+//classes and constructor
+class Car {
+    // properties of the class
+    brand;
+    model;
+    price;
+    //constructor to initialize the car object
+    constructor(brand, model, price) {
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+    }
+    // method to display car information
+    displayInformation() {
+        console.log(`Car Brand: ${this.brand}`);
+        console.log(`Model: ${this.model}`);
+        console.log(`Price: ${this.price}`);
+    }
+}
+console.log("=====================================");
+let myCar = new Car("Toyota", "Camry", 30000);
+myCar.displayInformation();
+console.log("=====================================");
+let carNumberTwo = new Car("Mazda", "Mayata", 20000);
+carNumberTwo.displayInformation();
+console.log("=====================================");
 //# sourceMappingURL=index.js.map

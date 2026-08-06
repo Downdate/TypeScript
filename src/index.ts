@@ -102,3 +102,35 @@ function printSomething<T,U,V>(a: T, b: U, c: V): void {
 
 printSomething<string, number, boolean>("Hello", 42, true);
 printSomething<number,boolean,boolean>(123, true, false);
+
+
+//classes and constructor
+
+class Car {
+
+    // properties of the class
+    brand: string;
+    model: string;
+    price: number;
+
+    //constructor to initialize the car object
+    constructor(brand: string, model: string, price: number){
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+    }
+
+    // method to display car information
+    displayInformation(): void {
+        console.log(`Car Brand: ${this.brand}`);
+        console.log(`Model: ${this.model}`);
+        console.log(`Price: ${this.price}`);
+    }
+}
+console.log("=====================================");
+let myCar = new Car("Toyota", "Camry", 30000);
+myCar.displayInformation();
+console.log("=====================================");
+let carNumberTwo = new Car("Mazda", "Mayata", 20000);
+carNumberTwo.displayInformation();
+console.log("=====================================");
