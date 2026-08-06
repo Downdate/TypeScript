@@ -97,4 +97,29 @@ console.log("=====================================");
 let carNumberTwo = new Car("Mazda", "Mayata", 20000);
 carNumberTwo.displayInformation();
 console.log("=====================================");
+// inheritance
+class ElectricCar extends Car {
+    batteryCapacity;
+    distancePerCharge;
+    constructor(brand, model, price, batteryCapacity, distancePerCharge) {
+        super(brand, model, price);
+        this.batteryCapacity = batteryCapacity;
+        this.distancePerCharge = distancePerCharge;
+    }
+    displayInformation() {
+        console.log("=====================================");
+        super.displayInformation();
+        console.log(`Battery Capacity: ${this.batteryCapacity}`);
+        console.log(`Distance Per Charge: ${this.distancePerCharge}`);
+        console.log("=====================================");
+    }
+    chargeBattery() {
+        console.log("=====================================");
+        console.log(`Charging the battery of ${this.brand} ${this.model}...`);
+        console.log("=====================================");
+    }
+}
+let tesla = new ElectricCar("Tesla", "Model S", 80000, 100, 370);
+tesla.displayInformation();
+tesla.chargeBattery();
 //# sourceMappingURL=index.js.map
