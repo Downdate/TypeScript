@@ -1,9 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.PI = void 0;
-exports.add = add;
-function add(a, b) {
+export function addNumbers(a, b) {
     return a + b;
 }
-exports.PI = 3.14159;
+export const PI = 3.14159;
 //# sourceMappingURL=math.js.map

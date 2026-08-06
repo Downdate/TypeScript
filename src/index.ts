@@ -199,7 +199,7 @@ student1.greet();
 
 // modules
 
-import { addNumbers, PI } from "./math";
+import { addNumbers, PI } from "./math.js";
 
 console.log(addNumbers(5, 3));
 console.log(PI);

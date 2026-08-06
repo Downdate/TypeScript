@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let age = 5;
 let name = "Fera";
 let flag = true;
@@ -136,7 +134,7 @@ class Student {
 let student1 = new Student("Alice", 20);
 student1.greet();
 // modules
-const math_1 = require("./math");
-console.log(add(5, 3));
-console.log(math_1.PI);
+import { addNumbers, PI } from "./math.js";
+console.log(addNumbers(5, 3));
+console.log(PI);
 //# sourceMappingURL=index.js.map
