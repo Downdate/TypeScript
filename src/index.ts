@@ -197,4 +197,11 @@ class Student implements Person {
 let student1 = new Student("Alice", 20);
 student1.greet();       
 
+// modules
+
+import { addNumbers, PI } from "./math";
+
+console.log(addNumbers(5, 3));
+console.log(PI);
+
 

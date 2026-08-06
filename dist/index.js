@@ -135,4 +135,8 @@ class Student {
 }
 let student1 = new Student("Alice", 20);
 student1.greet();
+// modules
+const math_1 = require("./math");
+console.log(add(5, 3));
+console.log(math_1.PI);
 //# sourceMappingURL=index.js.map
