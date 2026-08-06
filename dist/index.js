@@ -122,4 +122,17 @@ class ElectricCar extends Car {
 let tesla = new ElectricCar("Tesla", "Model S", 80000, 100, 370);
 tesla.displayInformation();
 tesla.chargeBattery();
+class Student {
+    name;
+    age;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    greet() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
+let student1 = new Student("Alice", 20);
+student1.greet();
 //# sourceMappingURL=index.js.map

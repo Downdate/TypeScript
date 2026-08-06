@@ -169,3 +169,32 @@ class ElectricCar extends Car {
 let tesla = new ElectricCar("Tesla", "Model S", 80000, 100, 370);
 tesla.displayInformation();
 tesla.chargeBattery();
+
+// interfaces
+
+interface Person {
+    name: string;
+    age: number;
+    greet(): void;
+}
+
+class Student implements Person {
+
+    name: string;
+    age: number;
+
+    constructor(name: string, age: number){
+        this.name = name;
+        this.age = age;
+    }
+
+    greet(): void {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+
+}
+
+let student1 = new Student("Alice", 20);
+student1.greet();       
+
+
